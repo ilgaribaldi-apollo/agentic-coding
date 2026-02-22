@@ -7,7 +7,8 @@ A portable knowledge base for AI-assisted software development. Drop it into any
 ```
 agentic-coding/
 ├── AGENTS.md            # Master registry with technology lookup table
-├── patterns/            # 17 code pattern docs across TS, Python, and cross-platform
+├── README.md            # Human-readable overview (this file)
+├── patterns/            # 18 code pattern docs across TS, Python, and cross-platform
 ├── templates/           # Templates for adding new content
 └── .agents/
     ├── agents/          # 5 sub-agent definitions for specialized tasks
@@ -21,7 +22,7 @@ Ready-to-use conventions for modern stacks. Each pattern doc includes stack choi
 
 | Domain | Patterns |
 |--------|----------|
-| **TypeScript / Frontend** | Next.js 15 App Router, Next.js project structure, Hono API routes, Drizzle ORM, TanStack Query v5, React 19 components, Shadcn/UI + Tailwind, Turborepo monorepos, Clerk auth, Vercel AI SDK, MCP server, Testing (Vitest/Playwright) |
+| **TypeScript / Frontend** | Next.js 15 App Router, Next.js project structure, Hono API routes, Drizzle ORM, TanStack Query v5, React 19 components, Shadcn/UI + Tailwind, Turborepo monorepos, Clerk auth, Vercel AI SDK, MCP server, Testing (Vitest/Playwright), TypeScript stack |
 | **Python / Backend** | Flask, psycopg2, SQLAlchemy, uv, deployment, CLI patterns, retry logic, parallel processing |
 | **Data Science** | xarray/Zarr, NumPy, joblib, temporal operations |
 | **Cross-Platform** | Expo SDK 55, React Native, Electron 35 |
