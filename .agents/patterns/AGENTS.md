@@ -36,7 +36,7 @@ Code patterns, conventions, and best practices organized by domain. Each pattern
 ## Workflow
 1. Identify the technology or domain for your task.
 2. Load the matching pattern file from the index above.
-3. To add a new pattern: copy `_templates/pattern.md`, fill it in, add entries here and in the parent AGENTS.md.
+3. To add a new pattern: copy `../templates/pattern.md`, fill it in, add entries here and in the parent AGENTS.md.
 
 ## Do / Don't
 

@@ -6,7 +6,7 @@ A portable knowledge base for AI-assisted software development. Drop it into any
 
 ```
 .agents/
-├── patterns/        # 15 code pattern docs across TS, Python, and cross-platform
+├── patterns/        # 17 code pattern docs across TS, Python, and cross-platform
 ├── agents/          # 5 sub-agent definitions for specialized tasks
 ├── skills/          # 4 multi-step skill workflows
 ├── skills/planning-with-files/plans/  # Implementation plans
@@ -20,7 +20,7 @@ Ready-to-use conventions for modern stacks. Each pattern doc includes stack choi
 
 | Domain | Patterns |
 |--------|----------|
-| **TypeScript / Frontend** | Next.js 15 App Router, Hono API routes, Drizzle ORM, TanStack Query v5, React 19 components, Shadcn/UI + Tailwind, Turborepo monorepos, Clerk auth |
+| **TypeScript / Frontend** | Next.js 15 App Router, Hono API routes, Drizzle ORM, TanStack Query v5, React 19 components, Shadcn/UI + Tailwind, Turborepo monorepos, Clerk auth, Vercel AI SDK, MCP server, Testing (Vitest/Playwright) |
 | **Python / Backend** | Flask, psycopg2, SQLAlchemy, uv, deployment, CLI patterns, retry logic, parallel processing |
 | **Data Science** | xarray/Zarr, NumPy, joblib, temporal operations |
 | **Cross-Platform** | Expo SDK 55, React Native, Electron 35 |
