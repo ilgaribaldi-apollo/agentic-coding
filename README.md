@@ -9,9 +9,9 @@ A portable knowledge base for AI-assisted software development. Drop it into any
 ├── patterns/        # 15 code pattern docs across TS, Python, and cross-platform
 ├── agents/          # 5 sub-agent definitions for specialized tasks
 ├── skills/          # 4 multi-step skill workflows
-├── plans/           # Implementation plan tracking (active + archived)
-├── _templates/      # Templates for adding new content
-└── REGISTRY.md      # Master index with technology lookup table
+├── skills/planning-with-files/plans/  # Implementation plans
+├── templates/       # Templates for adding new content
+└── AGENTS.md        # Master index with technology lookup table
 ```
 
 ### Patterns
@@ -57,7 +57,7 @@ Clone or copy `.agents/` into your project root. Point your `CLAUDE.md` at it:
 
 ```markdown
 ## Knowledge Base
-Read `AGENTS.md` for the full structure. Start with `.agents/REGISTRY.md` to find relevant patterns.
+Read `AGENTS.md` for the full structure. Start with `.agents/AGENTS.md` to find relevant patterns.
 ```
 
 ### With Other AI Coding Tools
@@ -70,24 +70,23 @@ Templates make it easy to add new patterns, libraries, or agents:
 
 ```bash
 # New pattern
-cp .agents/_templates/pattern.md .agents/patterns/my-pattern.md
+cp .agents/templates/pattern.md .agents/patterns/my-pattern.md
 
 # New library reference
-cp .agents/_templates/library.md .agents/patterns/my-library.md
+cp .agents/templates/library.md .agents/patterns/my-library.md
 
 # New agent
-cp .agents/_templates/agent.md .agents/agents/my-agent.md
+cp .agents/templates/agent.md .agents/agents/my-agent.md
 ```
 
-After filling in the template, add an entry to `.agents/REGISTRY.md`.
+After filling in the template, add an entry to `.agents/AGENTS.md`.
 
 ## Plans
 
 Track implementation plans across sessions:
 
 ```
-.agents/plans/active/[task-name]/    # task_plan.md, findings.md, progress.md
-.agents/plans/archived/[task-name]/  # Completed or abandoned plans
+.agents/skills/planning-with-files/plans/{plan-slug}/    # task_plan.md, findings.md, progress.md
 ```
 
 ## License

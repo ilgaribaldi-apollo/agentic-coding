@@ -79,25 +79,27 @@ If catchup report shows unsynced context:
 
 ## Important: Where Files Go
 
-- **Templates** are in `${CLAUDE_PLUGIN_ROOT}/templates/`
-- **Your planning files** go in **your project directory**
+- **Templates** are in `templates/` (within this skill directory)
+- **Your planning files** go in `plans/{plan-slug}/` (within this skill directory)
 
 | Location | What Goes There |
 |----------|-----------------|
-| Skill directory (`${CLAUDE_PLUGIN_ROOT}/`) | Templates, scripts, reference docs |
-| Your project directory | `task_plan.md`, `findings.md`, `progress.md` |
+| `templates/` | Copy-paste templates for task_plan.md, findings.md, progress.md |
+| `plans/{plan-slug}/` | Active plans: `task_plan.md`, `findings.md`, `progress.md` |
+| `scripts/` | Helper scripts for automation |
 
 ## Quick Start
 
 Before ANY complex task:
 
-1. **Create `task_plan.md`** — Use [templates/task_plan.md](templates/task_plan.md) as reference
-2. **Create `findings.md`** — Use [templates/findings.md](templates/findings.md) as reference
-3. **Create `progress.md`** — Use [templates/progress.md](templates/progress.md) as reference
-4. **Re-read plan before decisions** — Refreshes goals in attention window
-5. **Update after each phase** — Mark complete, log errors
+1. **Create plan directory** — `plans/{plan-slug}/` (e.g., `plans/implement-auth/`)
+2. **Create `task_plan.md`** — Use [templates/task_plan.md](templates/task_plan.md) as reference
+3. **Create `findings.md`** — Use [templates/findings.md](templates/findings.md) as reference
+4. **Create `progress.md`** — Use [templates/progress.md](templates/progress.md) as reference
+5. **Re-read plan before decisions** — Refreshes goals in attention window
+6. **Update after each phase** — Mark complete, log errors
 
-> **Note:** Planning files go in your project root, not the skill installation folder.
+> **Note:** Plans are stored within this skill at `plans/{plan-slug}/`, similar to how hyperscan stores scans in `scans/`.
 
 ## The Core Pattern
 
@@ -245,4 +247,4 @@ Helper scripts for automation:
 | Stuff everything in context | Store large content in files |
 | Start executing immediately | Create plan file FIRST |
 | Repeat failed actions | Track attempts, mutate approach |
-| Create files in skill directory | Create files in your project |
+| Scatter plan files across project dirs | Store in `plans/{plan-slug}/` within this skill |

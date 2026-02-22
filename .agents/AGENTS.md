@@ -42,13 +42,12 @@
 - [SKILL.md](skills/agent-browser/SKILL.md): Agent Browser — browser automation for testing, forms, screenshots
 
 ### Templates
-- [pattern.md](_templates/pattern.md): Template for new framework/convention patterns
-- [library.md](_templates/library.md): Template for new library/framework quick references
-- [agent.md](_templates/agent.md): Template for new sub-agent definitions
+- [pattern.md](templates/pattern.md): Template for new framework/convention patterns
+- [library.md](templates/library.md): Template for new library/framework quick references
+- [agent.md](templates/agent.md): Template for new sub-agent definitions
 
 ### Plans
-- [active/](plans/active): In-progress implementation plans
-- [archived/](plans/archived): Completed or abandoned plans
+- [plans/](skills/planning-with-files/plans): Implementation plans cataloged within planning-with-files skill
 
 ## Purpose
 Master index for the agentic-coding knowledge base. All patterns, agents, skills, and templates are registered here. Read this to find the right file for any technology or task.
@@ -57,7 +56,7 @@ Master index for the agentic-coding knowledge base. All patterns, agents, skills
 1. Identify what you need: a code pattern, a sub-agent, or a skill workflow.
 2. Find the relevant file in the File Index above.
 3. Load that file as context for your task.
-4. To add content: copy a template from `_templates/`, fill it in, add an entry here.
+4. To add content: copy a template from `templates/`, fill it in, add an entry here.
 
 ## Quick Lookup by Technology
 
@@ -91,6 +90,6 @@ Master index for the agentic-coding knowledge base. All patterns, agents, skills
 | Do | Don't |
 |----|-------|
 | Register every new file here | Add content without an index entry |
-| Use templates from `_templates/` | Create docs from scratch |
+| Use templates from `templates/` | Create docs from scratch |
 | Keep entries in `[filename](path): description` format | Use verbose prose in the index |
 | Use relative paths (repo is portable) | Hardcode machine-specific absolute paths |
